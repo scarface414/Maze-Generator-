@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maze</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="main">
+        <div class="bg">
+            <canvas id="canvas1"></canvas>
+            <canvas id="canvas2"></canvas>
+        </div>
+        <div class="cont">
+            <div class="mazeCanvas">
+                <canvas class="maze" id="canvas"></canvas>
+            </div>
+            <div class="buttons">
+                <a href="" id="download" download="image.png">
+                    <button class="bt" type="button" onClick="download()">Download</button>
+                </a>    
+                <select name="maze_color" id="dd1" class="bt">
+                    <!-- <option value="default" selected disabled hidden>Color</option> -->
+                    <option value="pink" id="PINK" >Pink</option>
+                    <option value="white" id="WHITE" selected>White</option>
+                    <option value="green">Green</option>
+                </select>
+                <select name="level" id="dd2" class="bt">
+                    <!-- <option value="default" selected disabled hidden>Difficulty</option> -->
+                    <option value="easy" class="diff" selected id="e">Easy</option>
+                    <option value="medium" class="diff" id="m">Medium</option>
+                    <option value="hard" class="diff" id="h">Hard</option>
+                    <option value="extreme" class="diff" id="ex">Extreme</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="m+m.js"></script>
+</body>
+</html>
